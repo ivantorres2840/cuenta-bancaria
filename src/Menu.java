@@ -20,7 +20,7 @@ public class Menu {
 		System.out.println("3. Ver el codigo de la entidad");
 		System.out.println("4. Ver el codigo de la oficina");
 		System.out.println("5. Ver el numero de la cuenta");
-		System.out.println("6. Ver los digitos de contro de la cuenta");
+		System.out.println("6. Ver los digitos de control de la cuenta");
 		System.out.println("7. Realizar un ingreo");
 		System.out.println("8. Retirar efectivo");
 		System.out.println("9. Consulto saldo");
