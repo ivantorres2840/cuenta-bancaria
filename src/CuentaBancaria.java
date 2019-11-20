@@ -67,8 +67,8 @@ public class CuentaBancaria {
 			Scanner leer = new Scanner(System.in);
 			System.out.println("Dime un cantidad a retirar");
 			retirar=leer.nextInt();
-			if(retirar>this.saldo) {
-				System.out.println("no puedes retirar dinero");
+			if(retirar>this.saldo && retirar==0) {
+				System.out.println("no puedes retirar mas dinero del que tienes o retirar 0");
 			}else {
 			this.saldo-=retirar;
 			}
@@ -197,7 +197,7 @@ public class CuentaBancaria {
 				System.out.println("Debes introducir como maximo 2 caracteres");
 			}
 			
-			if(codtotal.equalsIgnoreCase(this.codigocontrol) || this.nombre.length()<18 || this.entidad.length()<5 || this.oficina.length()<5 || this.numerocuenta.length()<11 ) {
+			if(codtotal.equalsIgnoreCase(this.codigocontrol) && this.nombre.length()<18 && this.entidad.length()<5 && this.oficina.length()<5 && this.numerocuenta.length()<11 ) {
 				return true;
 			}else {
 				return false;
