@@ -64,6 +64,10 @@ public class AplicacionCuentaBancaria {
 			} while (opcion != 10);
 		} else {
 			System.out.println("el codigo no es correcto");
+			System.out.println("caracteres nombre menor que 18");
+			System.out.println("caracteres entidad tienen que ser 4");
+			System.out.println("caracteres oficina tienen que ser 4");
+			System.out.println("caracteres codigo tienen que ser 2");
 		}
 
 	}

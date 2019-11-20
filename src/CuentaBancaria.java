@@ -193,11 +193,8 @@ public class CuentaBancaria {
 			codtotal=Integer.toString(cod1)+ Integer.toString(cod2);
 			
 			
-			if(this.codigocontrol.length()>2) {
-				System.out.println("Debes introducir como maximo 2 caracteres");
-			}
 			
-			if(codtotal.equalsIgnoreCase(this.codigocontrol) && this.nombre.length()<18 && this.entidad.length()<5 && this.oficina.length()<5 && this.numerocuenta.length()<11 ) {
+			if(codtotal.equalsIgnoreCase(this.codigocontrol) && this.nombre.length()<18 && this.entidad.length()<5 && this.oficina.length()<5 && this.numerocuenta.length()<11 && this.codigocontrol.length()>2) {
 				return true;
 			}else {
 				return false;
