@@ -23,7 +23,7 @@ public class Menu {
 		System.out.println("6. Ver los digitos de control de la cuenta");
 		System.out.println("7. Realizar un ingreo");
 		System.out.println("8. Retirar efectivo");
-		System.out.println("9. Consulto saldo");
+		System.out.println("9. Consultar saldo");
 		System.out.println("10. Salir");
 		opc=leer.nextInt();
 		}while(opc<1 || opc>10);
