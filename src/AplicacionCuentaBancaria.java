@@ -14,61 +14,57 @@ public class AplicacionCuentaBancaria {
 		String oficina = "";
 		String numcuenta = "";
 		String codigo = "";
-		System.out.println("Introduce un nombre");
-		nombre = leer.nextLine();
-		System.out.println("Introduce la entidad");
-		entidad = leer.nextLine();
-		System.out.println("Intoruce la oficina");
-		oficina = leer.nextLine();
-		System.out.println("Introduce el codigo");
-		codigo = leer.nextLine();
-		System.out.println("Introduce el numero de cuenta");
-		numcuenta = leer.nextLine();
-		CuentaBancaria p = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
+		CuentaBancaria p;
 
-		if (p.ComprobarCodigo()) {
-			do {
-				opcion = menu.pintaMenu();
-				switch (opcion) {
-				case 1:
-					p.mostrarCuenta();
-					break;
-				case 2:
-					p.mostrartitular();
-					break;
-				case 3:
-					p.mostrarEntidad();
-					break;
-				case 4:
-					p.mostraroficina();
-					break;
-				case 5:
-					p.mostrarnumcuenta();
-					break;
-				case 6:
-					p.mostrarcodigo();
-					break;
-				case 7:
-					p.hacerIngreso();
-					break;
-				case 8:
-					p.retirarIngreso();
-					break;
-				case 9:
-					p.mostrarSaldo();
-					break;
-				case 10:
-					System.out.println("Adios");
-					break;
-				}
-			} while (opcion != 10);
-		} else {
-			System.out.println("el codigo no es correcto");
-			System.out.println("caracteres nombre menor que 18");
-			System.out.println("caracteres entidad tienen que ser 4");
-			System.out.println("caracteres oficina tienen que ser 4");
-			System.out.println("caracteres codigo tienen que ser 2");
-		}
+		do {
+			System.out.println("Introduce un nombre");
+			nombre = leer.nextLine();
+			System.out.println("Introduce la entidad");
+			entidad = leer.nextLine();
+			System.out.println("Intoruce la oficina");
+			oficina = leer.nextLine();
+			System.out.println("Introduce el codigo");
+			codigo = leer.nextLine();
+			System.out.println("Introduce el numero de cuenta");
+			numcuenta = leer.nextLine();
+			p = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
+		} while (!p.ComprobarCodigo());
+
+		do {
+			opcion = menu.pintaMenu();
+			switch (opcion) {
+			case 1:
+				p.mostrarCuenta();
+				break;
+			case 2:
+				p.mostrartitular();
+				break;
+			case 3:
+				p.mostrarEntidad();
+				break;
+			case 4:
+				p.mostraroficina();
+				break;
+			case 5:
+				p.mostrarnumcuenta();
+				break;
+			case 6:
+				p.mostrarcodigo();
+				break;
+			case 7:
+				p.hacerIngreso();
+				break;
+			case 8:
+				p.retirarIngreso();
+				break;
+			case 9:
+				p.mostrarSaldo();
+				break;
+			case 10:
+				System.out.println("Adios");
+				break;
+			}
+		} while (opcion != 10);
 
 	}
 
