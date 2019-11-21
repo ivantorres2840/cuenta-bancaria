@@ -28,7 +28,7 @@ public class AplicacionCuentaBancaria {
 			System.out.println("Introduce el numero de cuenta");
 			numcuenta = leer.nextLine();
 			cuenta = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
-		} while (cuenta.ComprobarCodigo());
+		} while (!cuenta.ComprobarCodigo());
 
 		do {
 			opcion = menu.pintaMenu();

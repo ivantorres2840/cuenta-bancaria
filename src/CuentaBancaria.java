@@ -194,7 +194,7 @@ public class CuentaBancaria {
 			
 			
 			
-			if(codtotal.equalsIgnoreCase(this.codigocontrol) && this.nombre.length()<18 && this.entidad.length()<5 && this.oficina.length()<5 && this.numerocuenta.length()<11 && this.codigocontrol.length()>2) {
+			if(codtotal.equalsIgnoreCase(this.codigocontrol) && this.nombre.length()<18 && this.entidad.length()<5 && this.oficina.length()<5 && this.numerocuenta.length()<11 && this.codigocontrol.length()<3) {
 				return true;
 			}else {
 				return false;
