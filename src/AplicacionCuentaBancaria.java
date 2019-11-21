@@ -17,15 +17,15 @@ public class AplicacionCuentaBancaria {
 		CuentaBancaria cuenta;
 
 		do {
-			System.out.println("Introduce un nombre");
+			System.out.println("Introduce un nombre ");
 			nombre = leer.nextLine();
-			System.out.println("Introduce la entidad");
+			System.out.println("Introduce la entidad (4 digitos)");
 			entidad = leer.nextLine();
-			System.out.println("Intoruce la oficina");
+			System.out.println("Intoruce la oficina (4 digitos)");
 			oficina = leer.nextLine();
-			System.out.println("Introduce el codigo");
+			System.out.println("Introduce el codigo (2 digitos)");
 			codigo = leer.nextLine();
-			System.out.println("Introduce el numero de cuenta");
+			System.out.println("Introduce el numero de cuenta (10 digitos)");
 			numcuenta = leer.nextLine();
 			cuenta = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
 		} while (!cuenta.ComprobarCodigo());

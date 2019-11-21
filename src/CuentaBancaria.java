@@ -101,28 +101,7 @@ public class CuentaBancaria {
 		}
 		
 		
-		private void Titular() {
-			if (this.nombre.length()>70) {
-				System.out.println("debes escribir un nombre menor de 20 caracteres");
-			}
-		}
 		
-		private void ComprobarEntidad() {
-			if(this.entidad.length()>4) {
-				System.out.println("Debes escribir 4 numeros");
-			}
-		}
-		
-		private void ComprobarOficina() {
-			if (this.oficina.length()>4) {
-				System.out.println("Debes escribir 4 numeros");
-			}
-		}
-		private void ComprobarCuenta() {
-			if (this.numerocuenta.length()>10) {
-				System.out.println("Debes escribir 10 numeros");
-			}
-		}
 		
 		public boolean ComprobarCodigo() {
 			int num=0;
