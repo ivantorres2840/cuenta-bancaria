@@ -34,31 +34,31 @@ public class AplicacionCuentaBancaria {
 			opcion = menu.pintaMenu();
 			switch (opcion) {
 			case 1:
-				p.mostrarCuenta();
+				cuenta.mostrarCuenta();
 				break;
 			case 2:
-				p.mostrartitular();
+				cuenta.mostrartitular();
 				break;
 			case 3:
-				p.mostrarEntidad();
+				cuenta.mostrarEntidad();
 				break;
 			case 4:
-				p.mostraroficina();
+				cuenta.mostraroficina();
 				break;
 			case 5:
-				p.mostrarnumcuenta();
+				cuenta.mostrarnumcuenta();
 				break;
 			case 6:
-				p.mostrarcodigo();
+				cuenta.mostrarcodigo();
 				break;
 			case 7:
-				p.hacerIngreso();
+				cuenta.hacerIngreso();
 				break;
 			case 8:
-				p.retirarIngreso();
+				cuenta.retirarIngreso();
 				break;
 			case 9:
-				p.mostrarSaldo();
+				cuenta.mostrarSaldo();
 				break;
 			case 10:
 				System.out.println("Adios");
