@@ -14,7 +14,7 @@ public class AplicacionCuentaBancaria {
 		String oficina = "";
 		String numcuenta = "";
 		String codigo = "";
-		CuentaBancaria p;
+		CuentaBancaria cuenta;
 
 		do {
 			System.out.println("Introduce un nombre");
@@ -27,8 +27,8 @@ public class AplicacionCuentaBancaria {
 			codigo = leer.nextLine();
 			System.out.println("Introduce el numero de cuenta");
 			numcuenta = leer.nextLine();
-			p = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
-		} while (!p.ComprobarCodigo());
+			cuenta = new CuentaBancaria(nombre, entidad, oficina, codigo, numcuenta);
+		} while (cuenta.ComprobarCodigo());
 
 		do {
 			opcion = menu.pintaMenu();
