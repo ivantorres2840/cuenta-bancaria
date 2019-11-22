@@ -75,7 +75,7 @@ public class CuentaBancaria {
 		}
 		
 		public void mostrarCuenta() {
-			System.out.println(this.entidad + this.oficina + this.codigocontrol+ this.numerocuenta);
+			System.out.println(this.entidad +" "+ this.oficina + " " + this.codigocontrol+" " + this.numerocuenta);
 		}
 		
 		public void mostrarSaldo() {
